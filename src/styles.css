@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+/*!
+ * Start Bootstrap - Thumbnail Gallery (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+  /*  padding-top: 70px;  Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  background-color: #000;
+}
+
+.p-top{
+      padding: 60px 15px 0;
+}
+/*These styles help to center thumbnails*/
+.fl-no { float: none; }
+.dis-ib { display: inline-block; }
+.font0 { font-size: 0; }
+/*These styles help to center thumbnails*/
+.footer-text{
+    margin: 1rem 0 0;
+    color: #fff;
+    font-weight: normal;
+}
+/*Nav*/
+.navbar-brand{
+  margin-left: 0!important;
+}
+.navbar{
+  margin-bottom: 0;
+}
+
+h1{
+  text-align: left;
+}
+hr {
+  margin: 5px 0
+}
+.page-header{
+  margin: 15px 0 10px 0;
+  border-bottom: none;
+}
+
+.thumbnail:link, .thumbnail:visited, .thumbnail:hover, .thumbnail:active {
+  text-decoration: none;
+
+}
+ .thumbnail:hover  {
+  text-decoration: none;
+  color: #ccc;
+}
+.thumbnail{
+  font-size: 2rem;
+
+}
+.page-header{
+  color: #5aa3d1;
+}

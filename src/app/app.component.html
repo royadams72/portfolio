@@ -1,0 +1,11 @@
+
+
+<div [ngStyle]="{'min-height': clientHeight + 'px', 'margin-bottom': '-60px'}">
+          <!-- 'margin-bootom': '-FooterHeight' -->
+<app-nav></app-nav>
+<router-outlet></router-outlet>
+<div style="height: 60px"></div>
+      <!-- 200px is FooterHeight  this will push
+      the footer so it will not overlap if you have very long content  -->
+</div>
+<app-footer></app-footer>
