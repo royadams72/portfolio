@@ -10,8 +10,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AddsComponent } from './components/adds/adds.component';
 import { NavComponent } from './components/nav/nav.component';
 import { PrintComponent } from './components/print/print.component';
-import { SplashComponent } from './components/splash/splash.component';
 import { GamesComponent } from './components/games/games.component';
+import { WebComponent } from './components/web/web.component';
+import { GoingdutchComponent } from './components/goingdutch/goingdutch.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,8 +21,9 @@ import { GamesComponent } from './components/games/games.component';
     AddsComponent,
     NavComponent,
     PrintComponent,
-    SplashComponent,
-    GamesComponent
+    GamesComponent,
+    WebComponent,
+    GoingdutchComponent
   ],
   imports: [
     BrowserModule,

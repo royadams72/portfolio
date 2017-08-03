@@ -31,8 +31,9 @@ body {
   margin-bottom: 0;
 }
 
-h1{
+h1, h2, h3, h4, h5{
   text-align: left;
+  color: #5aa3d1;
 }
 hr {
   margin: 5px 0
@@ -55,5 +56,8 @@ hr {
 
 }
 .page-header{
-  color: #5aa3d1;
+
+}
+.mobile img {
+  padding: 10px 0;
 }

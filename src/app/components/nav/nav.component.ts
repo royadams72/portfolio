@@ -1,18 +1,28 @@
-import { Component } from '@angular/core';
-import {Router} from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent{
-   location ='';
+export class NavComponent implements OnInit, OnDestroy{
+   page = '';
+   location;
+   subscribeArray:Array<any> = [];
 
-    constructor(private  _router : Router)
-      {
-        //subscribe to the router, so can track the url; to hade and show navigation
-        _router.events.subscribe((url) => this.location = _router.url);
+    constructor(public  _router : Router){}
+
+    ngOnInit(){
+    this.location =  this._router.events.subscribe((url) => this.page = this._router.url);
+    this.subscribeArray.push(this.location);
+    }
+
+    ngOnDestroy(){
+     for (let entry of this.subscribeArray ){
+        entry.unsubscribe();
+        console.log(entry)
       }
 
+    }
 }
