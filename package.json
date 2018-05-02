@@ -27,7 +27,8 @@
     "zone.js": "^0.8.19",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
-    "ts-helpers": "^1.1.1"
+    "ts-helpers": "^1.1.1",
+    "@angular/platform-server": "^5.2.0"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.3",
