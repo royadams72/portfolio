@@ -56,6 +56,10 @@ MIT
 MIT
 MIT
 
+@nguniversal/module-map-ngfactory-loader@6.0.0
+MIT
+MIT
+
 @angular/router@5.2.10
 MIT
 MIT
