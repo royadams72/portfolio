@@ -1,15 +1,15 @@
-import 'zone.js/dist/zone-node';
-import 'reflect-metadata';
-import {
+require('zone.js/dist/zone-node');
+require('reflect-metadata');
+const {
   renderModuleFactory
-} from '@angular/platform-server';
-import * as express from 'express';
-import {
+} = require('@angular/platform-server');
+const express = require('express');
+const {
   readFileSync
-} from 'fs';
-import {
+} = require('fs');
+const {
   enableProdMode
-} from '@angular/core';
+} = require('@angular/core');
 
 const {
   AppServerModuleNgFactory
@@ -42,6 +42,6 @@ app.route('*').get((req, res) => {
 
 });
 
-app.listen(9000, () => {
-  console.log(`Angular Universal Node Express server listening on http://localhost:9000`);
+app.listen(8080, () => {
+  console.log(`Angular Universal Node Express server listening on http://localhost:8080`);
 });
