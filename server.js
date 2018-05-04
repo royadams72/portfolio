@@ -36,6 +36,13 @@ app.engine('html', ngExpressEngine({
 app.set('view engine', 'html');
 app.set('views', __dirname);
 
+app.use(express.static(__dirname + '/assets', {
+  index: false
+}));
+app.use(express.static(__dirname + '/dist', {
+  index: false
+}));
+
 app.get('/*', (req, res) => {
   console.time(`GET: ${req.originalUrl}`);
   // console.time("hdhdhd");
@@ -54,6 +61,7 @@ app.get('/*', (req, res) => {
   });
   console.timeEnd(`GET: ${req.originalUrl}`);
 });
-app.listen(process.env.PORT || 8080, () => {
-  console.log(`server running on`)
+var port = process.env.PORT || 8080
+app.listen(port, () => {
+  console.log(`server running on ${port}`)
 });

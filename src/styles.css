@@ -61,3 +61,6 @@ hr {
 .mobile img {
   padding: 10px 0;
 }
+.winHeight {
+  height: calc(100vh - 50px)
+}
