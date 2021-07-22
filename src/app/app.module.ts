@@ -26,7 +26,7 @@ import { GoingdutchComponent } from './components/goingdutch/goingdutch.componen
     GoingdutchComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
     HttpModule,
     routing
